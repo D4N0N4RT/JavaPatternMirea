@@ -6,7 +6,7 @@ import java.util.concurrent.*;
 
 public class MyExecutor implements ExecutorService {
 
-    private ExecutorService executor;
+    private final ExecutorService executor;
 
     MyExecutor(int treads){
         executor = Executors.newFixedThreadPool(treads);

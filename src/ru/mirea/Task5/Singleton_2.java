@@ -5,5 +5,4 @@ public enum Singleton_2 {
     public Singleton_2 getInstance() {
         return INSTANCE;
     }
-
 }
