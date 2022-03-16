@@ -15,7 +15,6 @@ public class Task11Application {
 		System.out.println("Hello Spring Boot");
 	}
 
-	@SuppressWarnings("unused")
 	@Component
 	@Endpoint(id = "check")
 	public static class Check{

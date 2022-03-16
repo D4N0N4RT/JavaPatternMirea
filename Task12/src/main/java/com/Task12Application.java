@@ -27,28 +27,26 @@ public class Task12Application {
 		final File txt = new File(__arg1);
 		final File hash = new File(__arg2);
 
-		@SuppressWarnings("StringConcatenationInLoop")
 		@SneakyThrows
 		@PostConstruct
 		public void st() {
-			String writ = "";
+			StringBuilder writ = new StringBuilder();
 			if(txt.exists()){
 				FileReader reader = new FileReader(txt);
 				while (reader.read() != -1){
-					writ += reader.getEncoding();
+					writ.append(reader.getEncoding());
 				}
 				reader.close();
 			}
 			else
-				writ = "null";
+				writ = new StringBuilder("null");
 			assert hash.exists() || hash.createNewFile();
 
 			FileWriter writer = new FileWriter(hash);
-			writer.write(String.valueOf(txt.exists() ? writ.hashCode() : writ));
+			writer.write(String.valueOf(txt.exists() ? writ.toString().hashCode() : writ.toString()));
 			writer.close();
 		}
 
-		@SuppressWarnings("ResultOfMethodCallIgnored")
 		@PreDestroy public void en() {
 			txt.delete();
 		}
