@@ -1,33 +1,38 @@
 package com;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
+@RequestMapping(value="/users")
 public class UserController {
     @Autowired
+    @Qualifier("userService")
     UserService service;
 
-    @GetMapping("/users")
-    public String users(Model model) {
-        List<User> users = service.getUsers();
-        model.addAttribute("users", users);
-        return "users";
+    @GetMapping(value="")
+    public ResponseEntity<List<User>> getFull() {
+        final List<User> usrs = service.getUsers();
+        return usrs != null ? new ResponseEntity<>(usrs, HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @PostMapping("/users")
-    public String addUser(Model model, String firstName, String lastName){
-        User user = new User();
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        service.saveUser(user);
-        List<User> users = service.getUsers();
-        model.addAttribute("users", users);
-        return "redirect:/users";
+    @GetMapping(value="/{id}")
+    public ResponseEntity<User> read(@PathVariable(name="id") long id) {
+        final User user = service.read(id);
+        return user != null
+                ? new ResponseEntity<>(user, HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @PostMapping(value="")
+    public ResponseEntity<?> addUser(User us){
+        service.saveUser(us);
+        return  new ResponseEntity<>(HttpStatus.CREATED);
     }
 }

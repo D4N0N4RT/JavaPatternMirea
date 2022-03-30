@@ -19,8 +19,8 @@ public class Config {
         HikariConfig config = new HikariConfig();
         config.setJdbcUrl("jdbc:postgresql://localhost:5432/users");
         config.setDriverClassName("org.postgresql.Driver");
-        config.setUsername("postgres");
-        config.setPassword("postgres");
+        config.setUsername("user");
+        config.setPassword("123");
         return new HikariDataSource(config);
     }
     @Bean
@@ -29,7 +29,7 @@ public class Config {
         sessionFactoryBean.setDataSource(dataSource);
         sessionFactoryBean.setPackagesToScan("com");
         Properties properties = new Properties();
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL92Dialect");
+        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL10Dialect");
         sessionFactoryBean.setHibernateProperties(properties);
         return sessionFactoryBean;
     }
