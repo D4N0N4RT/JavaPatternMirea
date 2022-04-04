@@ -31,8 +31,24 @@ public class UserController {
     }
 
     @PostMapping(value="")
-    public ResponseEntity<?> addUser(User us){
+    public ResponseEntity<?> addUser(@RequestBody User us){
         service.saveUser(us);
         return  new ResponseEntity<>(HttpStatus.CREATED);
+    }
+
+    @DeleteMapping(value="/{id}")
+    public ResponseEntity<?> delete(@PathVariable(name="id") long id) {
+        final boolean deleted = service.deleteUser(service.read(id));
+        return deleted
+                ? new ResponseEntity<>(HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+    }
+
+    @GetMapping(value = "/filter/{field}={value}")
+    public ResponseEntity<List<User>> usersFilter(@PathVariable(name="field") String field,@PathVariable(name="value") String value){
+        final List<User> usrs = service.userFilter(field, value);
+        return usrs != null && !usrs.isEmpty()
+                ? new ResponseEntity<>(usrs, HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }

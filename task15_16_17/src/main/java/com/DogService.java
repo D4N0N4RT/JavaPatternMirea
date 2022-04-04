@@ -7,67 +7,71 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-@Service("userService")
-public class UserService {
+@Service("dogService")
+@RequiredArgsConstructor
+public class DogService {
     private final SessionFactory sessionFactory;
     private Session session;
+    EntityManager em;
 
-    public UserService(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
+    public User getUserByDog(Long dogId) {
+        return session.createQuery("select d from Dog d where d.id = :id", Dog.class)
+                .setParameter("id",dogId).getSingleResult().getUser();
     }
-   /* @PostConstruct
-    void init() {
+
+    public Dog read(long id){
         session = sessionFactory.openSession();
-    }*/
-    public User read(long id){
-        session = sessionFactory.openSession();
-        User usr = session.createQuery("select User where id = :id from users ", User.class).
+        Dog dog = session.createQuery("select d from Dog d where d.id = :id", Dog.class).
                 setParameter("id", id).getSingleResult();
-        Hibernate.initialize(usr.getDogs());
         session.close();
-        return usr;
-    }
-    public List<User> getUsers() {
-        session = sessionFactory.openSession();
-        List<User> usrs = session.createQuery("select u from User u", User.class).getResultList();
-        for(User usr : usrs){
-            Hibernate.initialize(usr.getDogs());
-        }
-        session.close();
-        return usrs;
+        return dog;
     }
 
-    public void saveUser(User user){
+    public List<Dog> getDogs() {
+        session = sessionFactory.openSession();
+        List<Dog> dgs = session.createQuery("select d from Dog d", Dog.class).getResultList();
+        session.close();
+        return dgs;
+    }
+
+    public void saveDog(Dog dog){
         session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.saveOrUpdate(user);
+        session.saveOrUpdate(dog);
         transaction.commit();
         session.close();
     }
 
-    public void deleteUser(User user){
+    public void deleteDog(Dog dog){
         session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         //Удаляем пользователя
-        session.delete(user);
+        session.delete(dog);
         transaction.commit();
         session.close();
     }
 
-    public List<User> userFilter(String field){
+    public List<Dog> dogFilter(String field, String value) {
         session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
         CriteriaBuilder criteria = session.getCriteriaBuilder();
-        CriteriaQuery<User> userCriteriaQuery = criteria.createQuery(User.class);
-        Root<User> userRoot = userCriteriaQuery.from(User.class);
-        userCriteriaQuery.select(userRoot).orderBy(criteria.asc(userRoot.get(field)));
+        CriteriaQuery<Dog> userCriteriaQuery = criteria.createQuery(Dog.class);
+        Root<Dog> dogRoot = userCriteriaQuery.from(Dog.class);
+        userCriteriaQuery.select(dogRoot).where(criteria.like(dogRoot.get(field), value));
         Query query = session.createQuery(userCriteriaQuery);
+        List<Dog> dogs = query.getResultList();
+        transaction.commit();
         session.close();
-        return query.getResultList();
+        return dogs;
     }
 }
+
