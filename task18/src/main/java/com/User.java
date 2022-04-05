@@ -14,10 +14,8 @@ import java.util.List;
 @NoArgsConstructor
 public class User {
     @Id
-    //@SequenceGenerator(name = "users_seq", sequenceName = "users_sequence", allocationSize = 1)
-    // @GeneratedValue(generator = "users_seq", strategy = GenerationType.SEQUENCE)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "first_name")

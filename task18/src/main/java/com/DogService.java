@@ -18,7 +18,7 @@ public class DogService {
 
     public Dog read(long id) {
         log.info("Read dog by id = {}", id);
-        return dogRepository.getById(id);
+        return dogRepository.findById(id).get();
     }
 
     public List<Dog> readAll() {

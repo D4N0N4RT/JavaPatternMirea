@@ -18,7 +18,7 @@ public class UserService {
 
     public User read(long id) {
         log.info("Read user by id = {}", id);
-        return userRepository.getById(id);
+        return userRepository.findById(id).get();
     }
 
     public List<User> readAll() {
