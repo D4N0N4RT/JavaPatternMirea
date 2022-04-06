@@ -1,5 +1,7 @@
-package com;
+package com.service;
 
+import com.Dog;
+import com.DogRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,7 +33,7 @@ public class DogService {
         dogRepository.save(dog);
     }
 
-    boolean update(Dog dog, long id) {
+    public boolean update(Dog dog, long id) {
         log.info("Update dog {} by id = {}", dog, id);
         dog.setId(id);
         dogRepository.save(dog);
@@ -44,12 +46,12 @@ public class DogService {
         return true;
     }
 
-    List<Dog> findDogsByName(String name) {
+    public List<Dog> findDogsByName(String name) {
         log.info("Find all dogs by name = {}", name);
         return dogRepository.findAllByName(name);
     }
 
-    List<Dog> findDogsByBreed(String breed) {
+    public List<Dog> findDogsByBreed(String breed) {
         log.info("Find all dogs by breed = {}", breed);
         return dogRepository.findAllByBreed(breed);
     }

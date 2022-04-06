@@ -32,9 +32,9 @@
 22880 [http-nio-8001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
 22880 [http-nio-8001-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
 22880 [http-nio-8001-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
-22927 [http-nio-8001-exec-2] INFO  com.UserService – Read all users
-30064 [http-nio-8001-exec-1] INFO  com.DogService – Read dog by id = 2
-47641 [http-nio-8001-exec-3] INFO  com.UserService – Find all users by first name = Andrew
+22927 [http-nio-8001-exec-2] INFO  com.service.UserService – Read all users
+30064 [http-nio-8001-exec-1] INFO  com.service.DogService – Read dog by id = 2
+47641 [http-nio-8001-exec-3] INFO  com.service.UserService – Find all users by first name = Andrew
 52619 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
 52635 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
 52651 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.

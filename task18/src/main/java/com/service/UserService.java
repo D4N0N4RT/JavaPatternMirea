@@ -1,5 +1,7 @@
-package com;
+package com.service;
 
+import com.User;
+import com.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,7 +33,7 @@ public class UserService {
         userRepository.save(user);
     }
 
-    boolean update(User user, long id) {
+    public boolean update(User user, long id) {
         log.info("Update user {} by id = {}", user, id);
         user.setId(id);
         userRepository.save(user);
@@ -44,12 +46,12 @@ public class UserService {
         return true;
     }
 
-    List<User> findUsersByFirstName(String firstName) {
+    public List<User> findUsersByFirstName(String firstName) {
         log.info("Find all users by first name = {}", firstName);
         return userRepository.findAllByFirstName(firstName);
     }
 
-    List<User> findUsersByLastName(String lastName) {
+    public List<User> findUsersByLastName(String lastName) {
         log.info("Find all users by last name = {}", lastName);
         return userRepository.findAllByLastName(lastName);
     }
