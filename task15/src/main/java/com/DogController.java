@@ -16,9 +16,11 @@ public class DogController {
     DogService service;
 
     @GetMapping(value = "/{dogId}/user")
-    public @ResponseBody
-    User getDogUser(@PathVariable(name="dogId") Long dogId){
-        return service.getUserByDog(dogId);
+    public ResponseEntity<User> getDogUser(@PathVariable(name="dogId") Long dogId){
+        final User user = service.getUserByDog(dogId);
+        return user != null
+                ? new ResponseEntity<>(user, HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     @GetMapping(value="")

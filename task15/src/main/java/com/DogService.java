@@ -1,12 +1,12 @@
 package com;
 
 import lombok.RequiredArgsConstructor;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -18,11 +18,15 @@ import java.util.List;
 public class DogService {
     private final SessionFactory sessionFactory;
     private Session session;
-    EntityManager em;
 
-    public User getUserByDog(Long dogId) {
-        return session.createQuery("select d from Dog d where d.id = :id", Dog.class)
-                .setParameter("id",dogId).getSingleResult().getUser();
+    public User getUserByDog(long dogId) {
+        session = sessionFactory.openSession();
+        Dog dog = session.createQuery("select d from Dog d join fetch  d.user where d.id = :id", Dog.class)
+                .setParameter("id",dogId).getSingleResult();
+        User us = dog.getUser();
+        Hibernate.initialize(us.getDogs());
+        session.close();
+        return us;
     }
 
     public Dog read(long id){
@@ -51,7 +55,6 @@ public class DogService {
     public void deleteDog(Dog dog){
         session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        //Удаляем пользователя
         session.delete(dog);
         transaction.commit();
         session.close();

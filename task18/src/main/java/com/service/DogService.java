@@ -2,6 +2,7 @@ package com.service;
 
 import com.Dog;
 import com.DogRepository;
+import com.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
