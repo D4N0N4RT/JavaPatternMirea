@@ -3,6 +3,7 @@ package com;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @Table(name = "users")
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 public class User {
     @Id

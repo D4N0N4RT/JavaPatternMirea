@@ -35,6 +35,7 @@ public class UserController {
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    //curl -i -X POST -H "Content-Type: application/json" -d "{\"id\":5,\"firstName\":\"Steven\",\"lastName\":\"Spencer\"}" http://localhost:8001/users
     @PostMapping(value = "")
     public ResponseEntity<?> addUser(@RequestBody User us) {
         userService.saveUser(us);
