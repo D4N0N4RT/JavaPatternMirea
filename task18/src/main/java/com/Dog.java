@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Setter
 @ToString
 @NoArgsConstructor
-public class Dog {
+public class Dog implements Backupable {
     @Id
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -30,4 +30,14 @@ public class Dog {
     @JoinColumn(name="user_id")
     @JsonIgnore
     public User user;
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "\n\tid=" + id +
+                ", \n\tname='" + name + '\'' +
+                ", \n\tbreed='" + breed + '\'' +
+                ", \n\tuser_id='" + user.getId() + '\'' +
+                "\n}";
+    }
 }

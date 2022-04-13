@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @ToString
 @NoArgsConstructor
-public class User {
+public class User implements Backupable {
     @Id
     @Column(name = "id")
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,4 +28,13 @@ public class User {
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Dog> dogs;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "\n\tid=" + id +
+                ", \n\tfirstName='" + firstName + '\'' +
+                ", \n\tlastName='" + lastName + '\'' +
+                "\n}";
+    }
 }

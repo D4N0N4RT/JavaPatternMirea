@@ -1,0 +1,20 @@
+User{
+	id=1, 
+	firstName='James', 
+	lastName='Smith'
+}
+User{
+	id=2, 
+	firstName='Hugh', 
+	lastName='Lowry'
+}
+User{
+	id=3, 
+	firstName='Andrew', 
+	lastName='Harden'
+}
+User{
+	id=4, 
+	firstName='Danny', 
+	lastName='Andrews'
+}
