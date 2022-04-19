@@ -27,8 +27,8 @@ public class SchedulerService implements SchedulerServiceMBean {
         this.dogService = dogService;
     }
 
-    //@Scheduled(fixedRate = 1800000L)
-    @Scheduled(fixedRate = 60000L)
+    @Scheduled(fixedRate = 1800000L)
+    //@Scheduled(fixedRate = 60000L)
     public void backupDB() throws IOException {
         clearOldDirectories();
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("d MMM uuuu H-m");

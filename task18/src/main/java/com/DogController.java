@@ -34,6 +34,7 @@ public class DogController {
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    //curl -i -X POST -H "Content-Type: application/json" -d "{\"id\":3,\"name\":\"Berny\",\"breed\":\"Bulldog\",\"user_id\":3}" http://localhost:8001/dogs
     @PostMapping(value = "")
     public ResponseEntity<?> addDog(@RequestBody Dog dog) {
         dogService.saveDog(dog);

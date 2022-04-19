@@ -18,3 +18,8 @@ User{
 	firstName='Danny', 
 	lastName='Andrews'
 }
+User{
+	id=5, 
+	firstName='Steven', 
+	lastName='Spencer'
+}

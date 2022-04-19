@@ -1,258 +1,152 @@
-1500 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 12048 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1516 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1600 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1600 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3419 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3419 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3866 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 432 ms. Found 2 JPA repository interfaces.
-4237 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-4237 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-4299 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-4299 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-4299 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 65 ms. Found 0 JDBC repository interfaces.
-5757 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-5772 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-5772 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-5772 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5989 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5989 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 4389 ms
-6392 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-6894 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-7094 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-7210 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-7480 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-7674 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-8514 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-8530 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-9333 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'config': Invocation of init method failed; nested exception is javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 is not a JMX compliant MXBean)
-9333 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-9349 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-9365 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-9365 [restartedMain] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-9387 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-9449 [restartedMain] ERROR o.s.boot.SpringApplication – Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'config': Invocation of init method failed; nested exception is javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 is not a JMX compliant MXBean)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.Task18Application.main(Task18Application.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$8255ad00 is not a JMX compliant MXBean)
-	at java.management/com.sun.jmx.mbeanserver.Introspector.checkCompliance(Introspector.java:177)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:313)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
-	at com.Config.initJMC(Config.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
-	... 23 common frames omitted
-1410 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 15484 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1410 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1488 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1488 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3102 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3102 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3423 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 306 ms. Found 2 JPA repository interfaces.
-3702 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3702 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3756 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3756 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3756 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 60 ms. Found 0 JDBC repository interfaces.
-4996 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-4996 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-5011 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-5011 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5181 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5181 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3693 ms
-5580 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5823 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-5986 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-6040 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6235 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6414 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7216 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7238 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-7887 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'config': Invocation of init method failed; nested exception is javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd is not a JMX compliant MXBean)
-7887 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-7887 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-7903 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-7903 [restartedMain] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-7934 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-7972 [restartedMain] ERROR o.s.boot.SpringApplication – Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'config': Invocation of init method failed; nested exception is javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd is not a JMX compliant MXBean)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.Task18Application.main(Task18Application.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$52e239dd is not a JMX compliant MXBean)
-	at java.management/com.sun.jmx.mbeanserver.Introspector.checkCompliance(Introspector.java:177)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:313)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
-	at com.Config.initJMC(Config.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
-	... 23 common frames omitted
-1427 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 6496 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1427 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1490 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1490 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3126 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3126 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3474 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 334 ms. Found 2 JPA repository interfaces.
-3762 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3762 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3825 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3825 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3825 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 63 ms. Found 0 JDBC repository interfaces.
-4997 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-5013 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-5013 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-5013 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5182 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5182 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3692 ms
-5591 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5835 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-6011 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-6092 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6285 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6448 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7183 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7199 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-7901 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'config': Invocation of init method failed; nested exception is javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a is not a JMX compliant MXBean)
-7901 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-7916 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-7923 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-7923 [restartedMain] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-7954 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-7985 [restartedMain] ERROR o.s.boot.SpringApplication – Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'config': Invocation of init method failed; nested exception is javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a is not a JMX compliant MXBean)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:160)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:440)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1796)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.Task18Application.main(Task18Application.java:10)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.management.NotCompliantMBeanException: MBean class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a does not implement DynamicMBean, and neither follows the Standard MBean conventions (javax.management.NotCompliantMBeanException: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a is not a JMX compliant Standard MBean) nor the MXBean conventions (javax.management.NotCompliantMBeanException: com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a: Class com.service.SchedulerService$$EnhancerBySpringCGLIB$$f819621a is not a JMX compliant MXBean)
-	at java.management/com.sun.jmx.mbeanserver.Introspector.checkCompliance(Introspector.java:177)
-	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:313)
-	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
-	at com.Config.initJMC(Config.java:41)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:333)
-	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:157)
-	... 23 common frames omitted
-1356 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 4140 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1356 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1434 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1434 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3053 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3053 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3372 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 304 ms. Found 2 JPA repository interfaces.
-3650 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3650 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3704 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3704 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3704 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 59 ms. Found 0 JDBC repository interfaces.
-4876 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-4892 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-4892 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-4892 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5055 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5055 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3621 ms
-5401 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5641 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-5811 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-5880 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6095 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6269 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7018 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7018 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-7858 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-9764 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-9795 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
-9833 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
-9864 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.151 seconds (JVM running for 11.042)
-9880 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.lang.NullPointerException: null
-	at com.service.SchedulerService.clearOldDirectories(SchedulerService.java:59)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:33)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
+1726 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 10656 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+1767 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
+1871 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1871 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3951 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3951 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+4348 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 367 ms. Found 2 JPA repository interfaces.
+4681 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+4681 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+4743 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4743 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4743 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 65 ms. Found 0 JDBC repository interfaces.
+6180 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+6186 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+6186 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+6186 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+6380 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+6380 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 4509 ms
+6765 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+7266 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+7451 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+7567 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+7852 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+8053 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+8965 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+8980 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+9827 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11780 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+11817 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+11864 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+11896 [restartedMain] INFO  com.Task18Application – Started Task18Application in 10.95 seconds (JVM running for 13.282)
+11949 [scheduling-1] INFO  com.service.UserService – Read all users
+12181 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 216 ms
+12203 [scheduling-1] INFO  com.service.DogService – Read all dogs
+12219 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 22 ms
+12234 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 354 ms
+22361 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+22361 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+22361 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+22530 [http-nio-8001-exec-1] INFO  com.service.UserService – Save user User{
+	id=5, 
+	firstName='Steven', 
+	lastName='Spencer'
+}
+22593 [http-nio-8001-exec-1] INFO  com.Aspect – UserService.saveUser(..) completed in 63 ms
+27260 [task-1] INFO  com.Aspect – MailService.sendMail(..) completed in 4667 ms
+55373 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+55383 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+55399 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1560 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 8848 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+1560 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
+1641 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1641 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3504 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3504 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3894 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 381 ms. Found 2 JPA repository interfaces.
+4220 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+4220 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+4283 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4283 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4283 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 61 ms. Found 0 JDBC repository interfaces.
+5553 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+5553 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+5569 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+5569 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+5732 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+5732 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 4091 ms
+6099 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+6341 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6510 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+6595 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+6788 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6967 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7731 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7753 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8560 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10509 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+10531 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+10577 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+10593 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.836 seconds (JVM running for 11.829)
+10647 [scheduling-1] INFO  com.service.UserService – Read all users
+10832 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 185 ms
+10863 [scheduling-1] INFO  com.service.DogService – Read all dogs
+10926 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 63 ms
+10948 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 355 ms
+16267 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+16267 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+16267 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+16351 [http-nio-8001-exec-1] INFO  com.service.UserService – Delete user by id = 5
+16405 [http-nio-8001-exec-1] INFO  com.Aspect – UserService.deleteUser(..) completed in 54 ms
+20371 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+20387 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+20412 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1382 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 4264 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+1397 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
+1498 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1498 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3509 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3509 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3832 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 314 ms. Found 2 JPA repository interfaces.
+4111 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+4111 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+4164 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4164 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4164 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 60 ms. Found 0 JDBC repository interfaces.
+5324 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+5340 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+5340 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+5340 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+5493 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+5493 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3995 ms
+5841 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+6073 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6242 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+6311 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+6559 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6733 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7516 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7531 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8364 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10144 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+10175 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+10206 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+10228 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.571 seconds (JVM running for 11.547)
+10291 [scheduling-1] INFO  com.service.UserService – Read all users
+10514 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 233 ms
+10545 [scheduling-1] INFO  com.service.DogService – Read all dogs
+10560 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 31 ms
+10576 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 348 ms
+20439 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+20439 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+20439 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+20577 [http-nio-8001-exec-1] INFO  com.service.UserService – Save user User{
+	id=5, 
+	firstName='Steven', 
+	lastName='Spencer'
+}
+20624 [http-nio-8001-exec-1] INFO  com.Aspect – UserService.saveUser(..) completed in 47 ms
+20756 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler – Unexpected exception occurred invoking async method: public void com.service.MailService.sendMail(java.lang.Object) throws org.springframework.mail.MailException
+org.springframework.mail.MailSendException: Mail server connection failed; nested exception is com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.yandex.ru, 465; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.yandex.ru. Failed messages: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.yandex.ru, 465; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.yandex.ru
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:448)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:323)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:312)
+	at com.service.MailService.sendMail(MailService.java:35)
+	at com.service.MailService$$FastClassBySpringCGLIB$$5be3c738.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -271,68 +165,124 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$fec81f3f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-68854 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-68870 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-68908 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-1542 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 11492 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+Caused by: com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.yandex.ru, 465; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2210)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
+	at javax.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:437)
+	... 27 common frames omitted
+Caused by: java.net.UnknownHostException: smtp.yandex.ru
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:229)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:608)
+	at java.base/java.net.Socket.connect(Socket.java:557)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:335)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:214)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2160)
+	... 31 common frames omitted
+49507 [http-nio-8001-exec-3] INFO  com.service.UserService – Delete user by id = 5
+49523 [http-nio-8001-exec-3] INFO  com.Aspect – UserService.deleteUser(..) completed in 22 ms
+56650 [http-nio-8001-exec-5] INFO  com.service.UserService – Save user User{
+	id=5, 
+	firstName='Steven', 
+	lastName='Spencer'
+}
+56650 [http-nio-8001-exec-5] INFO  com.Aspect – UserService.saveUser(..) completed in 0 ms
+62126 [task-2] INFO  com.Aspect – MailService.sendMail(..) completed in 5476 ms
+86760 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+86760 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+86788 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1542 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 2736 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
 1542 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1630 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1630 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3280 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3280 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3597 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 314 ms. Found 2 JPA repository interfaces.
-3867 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3867 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3935 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3935 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3935 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 72 ms. Found 0 JDBC repository interfaces.
-5083 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-5098 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-5098 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-5098 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5268 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5268 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3636 ms
-5600 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5847 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-6001 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-6086 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6271 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6418 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7174 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7189 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-7981 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-9825 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-9856 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
-9878 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
-9910 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.207 seconds (JVM running for 11.069)
-9978 [scheduling-1] INFO  com.service.UserService – Read all users
-10179 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 210 ms
-10210 [scheduling-1] INFO  com.service.DogService – Read all dogs
-10226 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 16 ms
-10241 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-56\users (Системе не удается найти указанный путь)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:48)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
+1620 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1620 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3247 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3247 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3579 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 330 ms. Found 2 JPA repository interfaces.
+3897 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3897 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+3966 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+3966 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+3966 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 67 ms. Found 0 JDBC repository interfaces.
+5170 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+5186 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+5186 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+5186 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+5355 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+5355 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3735 ms
+5703 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+5957 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6120 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+6205 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+6442 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6621 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7392 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7392 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8179 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10060 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+10106 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+10129 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+10165 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.404 seconds (JVM running for 11.197)
+10212 [scheduling-1] INFO  com.service.UserService – Read all users
+10407 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 180 ms
+10430 [scheduling-1] INFO  com.service.DogService – Read all dogs
+10446 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 16 ms
+10461 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 301 ms
+37356 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+37356 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+37372 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1482 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 10188 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+1498 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
+1582 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1582 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3329 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3329 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+3668 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 331 ms. Found 2 JPA repository interfaces.
+3969 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3969 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+4032 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4032 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4032 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 63 ms. Found 0 JDBC repository interfaces.
+5335 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+5351 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+5351 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+5351 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+5520 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+5520 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3938 ms
+5959 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+6223 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+6361 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+6461 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+6762 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+6963 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+7828 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7844 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8646 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10505 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+10536 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+10574 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+10605 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.868 seconds (JVM running for 11.896)
+10652 [scheduling-1] INFO  com.service.UserService – Read all users
+10875 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 223 ms
+10906 [scheduling-1] INFO  com.service.DogService – Read all dogs
+10922 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 32 ms
+10937 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 348 ms
+26451 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+26451 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+26451 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+26589 [http-nio-8001-exec-1] INFO  com.service.DogService – Save dog [FAILED toString()]
+26652 [http-nio-8001-exec-1] INFO  com.Aspect – DogService.saveDog(..) completed in 63 ms
+26667 [task-1] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler – Unexpected exception occurred invoking async method: public void com.service.MailService.sendMail(java.lang.Object) throws org.springframework.mail.MailException
+java.lang.NullPointerException: null
+	at com.Dog.toString(Dog.java:40)
+	at com.service.MailService.sendMail(MailService.java:34)
+	at com.service.MailService$$FastClassBySpringCGLIB$$5be3c738.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -351,34 +301,120 @@ java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-56\users (Сис
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+26689 [http-nio-8001-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper – SQL Error: 0, SQLState: 23502
+26689 [http-nio-8001-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper – ОШИБКА: значение NULL в столбце "user_id" отношения "dogs" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (3, Berny, Bulldog, null).
+26689 [http-nio-8001-exec-1] INFO  o.h.e.j.b.i.AbstractBatchImpl – HHH000010: On release of batch it still contained JDBC statements
+26752 [http-nio-8001-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+org.postgresql.util.PSQLException: ОШИБКА: значение NULL в столбце "user_id" отношения "dogs" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (3, Berny, Bulldog, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$15be1ddf.backupDB(<generated>)
+	at com.service.DogService$$EnhancerBySpringCGLIB$$f57b1b8d.saveDog(<generated>)
+	at com.DogController.addDog(DogController.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-69922 [scheduling-1] INFO  com.service.UserService – Read all users
-69922 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-69922 [scheduling-1] INFO  com.service.DogService – Read all dogs
-69922 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-69922 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-57\users (Системе не удается найти указанный путь)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:48)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
+73203 [http-nio-8001-exec-2] INFO  com.service.DogService – Save dog [FAILED toString()]
+73203 [http-nio-8001-exec-2] INFO  com.Aspect – DogService.saveDog(..) completed in 0 ms
+73203 [http-nio-8001-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper – SQL Error: 0, SQLState: 23502
+73203 [task-2] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler – Unexpected exception occurred invoking async method: public void com.service.MailService.sendMail(java.lang.Object) throws org.springframework.mail.MailException
+java.lang.NullPointerException: null
+	at com.Dog.toString(Dog.java:40)
+	at com.service.MailService.sendMail(MailService.java:34)
+	at com.service.MailService$$FastClassBySpringCGLIB$$5be3c738.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -397,34 +433,118 @@ java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-57\users (Сис
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+73203 [http-nio-8001-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper – ОШИБКА: значение NULL в столбце "user_id" отношения "dogs" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (3, Berny, Bulldog, null).
+73203 [http-nio-8001-exec-2] INFO  o.h.e.j.b.i.AbstractBatchImpl – HHH000010: On release of batch it still contained JDBC statements
+73219 [http-nio-8001-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+org.postgresql.util.PSQLException: ОШИБКА: значение NULL в столбце "user_id" отношения "dogs" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (3, Berny, Bulldog, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$15be1ddf.backupDB(<generated>)
+	at com.service.DogService$$EnhancerBySpringCGLIB$$f57b1b8d.saveDog(<generated>)
+	at com.DogController.addDog(DogController.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-129912 [scheduling-1] INFO  com.service.UserService – Read all users
-129912 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-129912 [scheduling-1] INFO  com.service.DogService – Read all dogs
-129912 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-129912 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-58\users (Системе не удается найти указанный путь)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:48)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
+241747 [http-nio-8001-exec-3] INFO  com.service.DogService – Save dog [FAILED toString()]
+241747 [http-nio-8001-exec-3] INFO  com.Aspect – DogService.saveDog(..) completed in 0 ms
+241747 [task-3] ERROR o.s.a.i.SimpleAsyncUncaughtExceptionHandler – Unexpected exception occurred invoking async method: public void com.service.MailService.sendMail(java.lang.Object) throws org.springframework.mail.MailException
+java.lang.NullPointerException: null
+	at com.Dog.toString(Dog.java:40)
+	at com.service.MailService.sendMail(MailService.java:34)
+	at com.service.MailService$$FastClassBySpringCGLIB$$5be3c738.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -443,651 +563,112 @@ java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-58\users (Сис
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$15be1ddf.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-189921 [scheduling-1] INFO  com.service.UserService – Read all users
-189921 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-189921 [scheduling-1] INFO  com.service.DogService – Read all dogs
-189921 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-189921 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.io.FileNotFoundException: task18\backup\13 апр. 2022 14-59\users (Системе не удается найти указанный путь)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:48)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
+241747 [http-nio-8001-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper – SQL Error: 0, SQLState: 23502
+241747 [http-nio-8001-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper – ОШИБКА: значение NULL в столбце "user_id" отношения "dogs" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (3, Berny, Bulldog, null).
+241747 [http-nio-8001-exec-3] INFO  o.h.e.j.b.i.AbstractBatchImpl – HHH000010: On release of batch it still contained JDBC statements
+241763 [http-nio-8001-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] – Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+org.postgresql.util.PSQLException: ОШИБКА: значение NULL в столбце "user_id" отношения "dogs" нарушает ограничение NOT NULL
+  Подробности: Ошибочная строка содержит (3, Berny, Bulldog, null).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3375)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3908)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$15be1ddf.backupDB(<generated>)
+	at com.service.DogService$$EnhancerBySpringCGLIB$$f57b1b8d.saveDog(<generated>)
+	at com.DogController.addDog(DogController.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-249921 [scheduling-1] INFO  com.service.UserService – Read all users
-249921 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-249921 [scheduling-1] INFO  com.service.DogService – Read all dogs
-249921 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-249921 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.io.FileNotFoundException: task18\backup\13 апр. 2022 15-0\users (Системе не удается найти указанный путь)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:48)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$15be1ddf.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-309910 [scheduling-1] INFO  com.service.UserService – Read all users
-309910 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-309910 [scheduling-1] INFO  com.service.DogService – Read all dogs
-309910 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-309926 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-java.io.FileNotFoundException: task18\backup\13 апр. 2022 15-1\users (Системе не удается найти указанный путь)
-	at java.base/java.io.FileOutputStream.open0(Native Method)
-	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
-	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:187)
-	at java.base/java.io.FileWriter.<init>(FileWriter.java:96)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:48)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$15be1ddf.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-312171 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-312186 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-312202 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-1349 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 15156 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1365 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1444 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1444 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-2997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3336 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 316 ms. Found 2 JPA repository interfaces.
-3599 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3599 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3668 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3668 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3668 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 72 ms. Found 0 JDBC repository interfaces.
-4817 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-4832 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-4832 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-4832 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-4986 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-4986 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3542 ms
-5403 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5688 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-5843 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-5943 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6180 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6336 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7078 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7093 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-8011 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-9884 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-9922 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
-9953 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
-9984 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.327 seconds (JVM running for 11.263)
-10022 [scheduling-1] INFO  com.service.UserService – Read all users
-10223 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 194 ms
-10254 [scheduling-1] INFO  com.service.DogService – Read all dogs
-10270 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 31 ms
-10294 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-69990 [scheduling-1] INFO  com.service.UserService – Read all users
-69990 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-69990 [scheduling-1] INFO  com.service.DogService – Read all dogs
-70006 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 16 ms
-70006 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-129989 [scheduling-1] INFO  com.service.UserService – Read all users
-129989 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-129989 [scheduling-1] INFO  com.service.DogService – Read all dogs
-129989 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-129989 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-189993 [scheduling-1] INFO  com.service.UserService – Read all users
-189993 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-190009 [scheduling-1] INFO  com.service.DogService – Read all dogs
-190009 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-190015 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-249988 [scheduling-1] INFO  com.service.UserService – Read all users
-249988 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-249988 [scheduling-1] INFO  com.service.DogService – Read all dogs
-249988 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-250003 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-309986 [scheduling-1] INFO  com.service.UserService – Read all users
-309986 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-309986 [scheduling-1] INFO  com.service.DogService – Read all dogs
-309986 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-309986 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-369981 [scheduling-1] INFO  com.service.UserService – Read all users
-369981 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-369997 [scheduling-1] INFO  com.service.DogService – Read all dogs
-369997 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 0 ms
-369997 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
-	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621)
-	at java.base/java.lang.String.valueOf(String.java:2951)
-	at com.User.toString(User.java:15)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at jdk.internal.reflect.GeneratedMethodAccessor72.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$2d6cc70f.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-394352 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-394363 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-394383 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-1382 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 3940 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1382 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1444 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1444 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3245 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3245 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3568 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 323 ms. Found 2 JPA repository interfaces.
-3838 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3838 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3900 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 59 ms. Found 0 JDBC repository interfaces.
-5070 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-5070 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-5070 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-5070 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5239 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5239 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3779 ms
-5619 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5850 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-6019 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-6097 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6293 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6467 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7222 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7238 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-8014 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-9835 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-9866 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
-9898 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
-9929 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.259 seconds (JVM running for 11.085)
-9988 [scheduling-1] INFO  com.service.UserService – Read all users
-10183 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 211 ms
-10214 [scheduling-1] INFO  com.service.DogService – Read all dogs
-10236 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 22 ms
-10252 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler – Unexpected error occurred in scheduled task
-org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.User.dogs, could not initialize proxy - no Session
-	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:614)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218)
-	at org.hibernate.collection.internal.AbstractPersistentCollection.readSize(AbstractPersistentCollection.java:162)
-	at org.hibernate.collection.internal.PersistentBag.size(PersistentBag.java:371)
-	at com.User.toString(User.java:35)
-	at com.service.SchedulerService.writeBackup(SchedulerService.java:50)
-	at com.service.SchedulerService.backupDB(SchedulerService.java:42)
-	at com.service.SchedulerService$$FastClassBySpringCGLIB$$c176bf80.invoke(<generated>)
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at com.Aspect.timeExecutionServiceMethod(Aspect.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:634)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:624)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:72)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
-	at com.service.SchedulerService$$EnhancerBySpringCGLIB$$69b44fb2.backupDB(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
-	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-32727 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-32747 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-32778 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-1413 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 6948 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1413 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1482 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1482 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3086 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3086 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3418 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 324 ms. Found 2 JPA repository interfaces.
-3694 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3694 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-3773 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3773 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-3773 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 71 ms. Found 0 JDBC repository interfaces.
-4932 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-4948 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-4948 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-4948 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-5108 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-5108 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 3626 ms
-5456 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-5678 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-5879 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-5942 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-6142 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-6316 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-7066 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-7081 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-7873 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-9632 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-9663 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
-9701 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
-9716 [restartedMain] INFO  com.Task18Application – Started Task18Application in 9.005 seconds (JVM running for 10.953)
-9779 [scheduling-1] INFO  com.service.UserService – Read all users
-9964 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 185 ms
-9986 [scheduling-1] INFO  com.service.DogService – Read all dogs
-10002 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 16 ms
-10017 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 301 ms
-69732 [scheduling-1] INFO  com.service.UserService – Read all users
-69732 [scheduling-1] INFO  com.Aspect – UserService.readAll() completed in 0 ms
-69732 [scheduling-1] INFO  com.service.DogService – Read all dogs
-69748 [scheduling-1] INFO  com.Aspect – DogService.readAll() completed in 16 ms
-69748 [scheduling-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 16 ms
-85603 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-85619 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-85634 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+248167 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+248189 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+248205 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
