@@ -16,7 +16,7 @@ public class DogService {
     private MailService mailService;
 
     @Autowired
-    DogService(DogRepository dogRepository, MailService mailService) {
+    public DogService(DogRepository dogRepository, MailService mailService) {
         this.dogRepository = dogRepository;
         this.mailService = mailService;
     }

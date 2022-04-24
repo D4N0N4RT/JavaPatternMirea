@@ -22,10 +22,8 @@ import java.lang.management.ManagementFactory;
 @EnableJpaRepositories
 @EnableAspectJAutoProxy
 @EnableAsync
-@EnableScheduling
 public class Config {
-    private ApplicationContext applicationContext;
-
+    /*private ApplicationContext applicationContext;
 
     @Autowired
     public Config(ApplicationContext applicationContext) {
@@ -39,5 +37,5 @@ public class Config {
         MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
         ObjectName name = new ObjectName("com.service:type=SchedulerService");
         mbs.registerMBean(sc, name);
-    }
+    }*/
 }

@@ -16,7 +16,7 @@ public class UserService {
     private MailService mailService;
 
     @Autowired
-    UserService(UserRepository userRepository, MailService mailService) {
+    public UserService(UserRepository userRepository, MailService mailService) {
         this.userRepository = userRepository;
         this.mailService = mailService;
     }
