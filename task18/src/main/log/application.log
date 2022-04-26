@@ -1,49 +1,97 @@
-1614 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 9180 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
-1624 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
-1705 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-1705 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-3833 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-3833 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-4318 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 467 ms. Found 3 JPA repository interfaces.
-4745 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
-4745 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-4830 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-4830 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-4846 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.security.AppUserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-4846 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 86 ms. Found 0 JDBC repository interfaces.
-6650 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
-6672 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
-6674 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-6674 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-6917 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-6917 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 5204 ms
-7334 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-7635 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-7951 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-8053 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-8377 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-8566 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-9557 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-9573 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-10868 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-11658 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3aca30e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@46a630f0, org.springframework.security.web.header.HeaderWriterFilter@5cf6ba7f, org.springframework.security.web.authentication.logout.LogoutFilter@2ccab671, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74e8b5a3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5aafb946, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@407c2936, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@552ca62d, org.springframework.security.web.session.SessionManagementFilter@51cbfdc9, org.springframework.security.web.access.ExceptionTranslationFilter@395e3948, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4fedc891]
-12696 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
-13750 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
-13789 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
-13822 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
-13851 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-13866 [restartedMain] INFO  com.Task18Application – Started Task18Application in 13.004 seconds (JVM running for 15.314)
-13866 [restartedMain] INFO  com.security.AppUserRepoInit – Insert users
-13898 [pool-2-thread-1] INFO  com.service.UserService – Read all users
-14107 [pool-2-thread-1] INFO  com.Aspect – UserService.readAll() completed in 209 ms
-14138 [pool-2-thread-1] INFO  com.service.DogService – Read all dogs
-14160 [pool-2-thread-1] INFO  com.Aspect – DogService.readAll() completed in 38 ms
-14176 [pool-2-thread-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 325 ms
-27298 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-27298 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-27298 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
-42659 [http-nio-8001-exec-7] INFO  com.Aspect – ApplicationUserService.signUpUser(..) completed in 170 ms
-53340 [http-nio-8001-exec-8] INFO  com.Aspect – ApplicationUserService.loadUserByUsername(..) completed in 63 ms
-63390 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-63400 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-63410 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1728 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 14576 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+1741 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
+1844 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1844 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3967 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3967 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+4393 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 410 ms. Found 3 JPA repository interfaces.
+4770 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+4770 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+4834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.security.AppUserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4834 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 67 ms. Found 0 JDBC repository interfaces.
+6551 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+6562 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+6570 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+6570 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+6798 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+6806 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 4958 ms
+7198 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+7746 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+8134 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+8279 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+8635 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+8886 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+9938 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+9952 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+11230 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11998 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3708daf2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d5ada0d, org.springframework.security.web.header.HeaderWriterFilter@33cfb75d, org.springframework.security.web.authentication.logout.LogoutFilter@451507d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3fe80f31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1afebd8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d030636, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a95cd8c, org.springframework.security.web.session.SessionManagementFilter@fda9b79, org.springframework.security.web.access.ExceptionTranslationFilter@11e66c45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b13c7f1]
+13037 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+14008 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+14061 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+14092 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+14130 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+14146 [restartedMain] INFO  com.Task18Application – Started Task18Application in 13.245 seconds (JVM running for 15.52)
+14200 [pool-2-thread-1] INFO  com.service.UserService – Read all users
+14470 [pool-2-thread-1] INFO  com.Aspect – UserService.readAll() completed in 268 ms
+14504 [pool-2-thread-1] INFO  com.service.DogService – Read all dogs
+14518 [pool-2-thread-1] INFO  com.Aspect – DogService.readAll() completed in 22 ms
+14547 [pool-2-thread-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 404 ms
+31853 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+31853 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+31853 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+44652 [http-nio-8001-exec-8] INFO  com.Aspect – ApplicationUserService.signUpUser(..) completed in 255 ms
+50919 [http-nio-8001-exec-9] INFO  com.Aspect – ApplicationUserService.loadUserByUsername(..) completed in 32 ms
+55466 [http-nio-8001-exec-1] INFO  com.service.DogService – Read all dogs
+55469 [http-nio-8001-exec-1] INFO  com.Aspect – DogService.readAll() completed in 3 ms
+269303 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+269314 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+269335 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1629 [restartedMain] INFO  com.Task18Application – Starting Task18Application using Java 11.0.13 on DESKTOP-HDVDCAU with PID 14700 (C:\Users\Daniil\IdeaProjects\JavaPatternMirea\task18\target\classes started by Daniil in C:\Users\Daniil\IdeaProjects\JavaPatternMirea)
+1637 [restartedMain] INFO  com.Task18Application – No active profile set, falling back to 1 default profile: "default"
+1713 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+1713 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor – For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+3923 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+3931 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+4312 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 370 ms. Found 3 JPA repository interfaces.
+4694 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Multiple Spring Data modules found, entering strict repository configuration mode!
+4694 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+4753 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.DogRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4753 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4759 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport – Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.security.AppUserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+4760 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 64 ms. Found 0 JDBC repository interfaces.
+6683 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8001 (http)
+6704 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8001"]
+6704 [restartedMain] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+6704 [restartedMain] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+6883 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+6883 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 5170 ms
+7270 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+7548 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+7889 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+7996 [restartedMain] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+8230 [restartedMain] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+8418 [restartedMain] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+9387 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+9403 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+10598 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11302 [restartedMain] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7776c3dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c41d376, org.springframework.security.web.header.HeaderWriterFilter@ef673d2, org.springframework.security.web.authentication.logout.LogoutFilter@30b948de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@dc26d27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22b4e258, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10172aca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47cbefba, org.springframework.security.web.session.SessionManagementFilter@297f3493, org.springframework.security.web.access.ExceptionTranslationFilter@23f7e3f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1386b2ff]
+12310 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+13284 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer – LiveReload server is running on port 35729
+13338 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8001"]
+13382 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8001 (http) with context path ''
+13415 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor – No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+13435 [restartedMain] INFO  com.Task18Application – Started Task18Application in 12.613 seconds (JVM running for 14.75)
+13478 [pool-1-thread-1] INFO  com.service.UserService – Read all users
+13695 [pool-1-thread-1] INFO  com.Aspect – UserService.readAll() completed in 227 ms
+13728 [pool-1-thread-1] INFO  com.service.DogService – Read all dogs
+13746 [pool-1-thread-1] INFO  com.Aspect – DogService.readAll() completed in 22 ms
+13776 [pool-1-thread-1] INFO  com.Aspect – SchedulerService.backupDB() completed in 348 ms
+14144 [http-nio-8001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+14144 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+14144 [http-nio-8001-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+29613 [http-nio-8001-exec-6] INFO  com.Aspect – ApplicationUserService.loadUserByUsername(..) completed in 58 ms
+55516 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+55520 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+55541 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.

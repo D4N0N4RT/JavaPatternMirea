@@ -1,0 +1,12 @@
+Dog{
+	id=1, 
+	name='Brewster', 
+	breed='GSD', 
+	user_id='1'
+}
+Dog{
+	id=2, 
+	name='Blacky', 
+	breed='Bernesse', 
+	user_id='1'
+}
