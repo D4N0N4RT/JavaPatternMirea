@@ -116,7 +116,7 @@ public class DogServiceTest {
     }
 
     @Test
-    void findUsersByFirstName() {
+    void findDogsByName() {
         // given
         Dog dog = new Dog();
         dog.setName("Julie");
@@ -135,7 +135,7 @@ public class DogServiceTest {
     }
 
     @Test
-    void findUsersByLastName() {
+    void findDogsByBreed() {
         // given
         Dog dog = new Dog();
         dog.setName("Julie");

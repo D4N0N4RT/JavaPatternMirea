@@ -26,10 +26,13 @@ public class Dog implements Backupable {
     @Column(name = "breed")
     private String breed;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="user_id")
+    @ManyToOne(targetEntity = User.class,fetch = FetchType.LAZY)
+    @JoinColumn(name="user_id", insertable = false, updatable = false)
     @JsonIgnore
     public User user;
+
+    @Column(name="user_id")
+    private Long userId;
 
     @Override
     public String toString() {
@@ -37,7 +40,7 @@ public class Dog implements Backupable {
                 "\n\tid=" + id +
                 ", \n\tname='" + name + '\'' +
                 ", \n\tbreed='" + breed + '\'' +
-                ", \n\tuser_id='" + user.getId() + '\'' +
+                ", \n\tuser_id='" + userId + '\'' +
                 "\n}";
     }
 }
