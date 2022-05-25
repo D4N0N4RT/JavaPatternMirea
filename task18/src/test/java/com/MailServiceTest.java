@@ -27,7 +27,8 @@ public class MailServiceTest {
         User user = new User();
         user.setFirstName("Damian");
         user.setLastName("Kerk");
-        Mockito.doNothing().when(javaMailSenderImpl).send(Mockito.any(SimpleMailMessage.class));
+        user.setId(1L);
+        //Mockito.doNothing().when(javaMailSenderImpl).send(Mockito.any(SimpleMailMessage.class));
 
         // when
         underTest.sendMail(user);

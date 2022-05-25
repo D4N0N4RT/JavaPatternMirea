@@ -41,6 +41,9 @@ task createImage(type: Exec) {
     workingDir "$path"
     commandLine "cmd","/c", 'docker', 'build', '.', '--tag', 'grdl_task'
     ignoreExitValue true
+    finalizedBy {
+        createContainer
+    }
 }
 
 task createContainer(type: Exec){

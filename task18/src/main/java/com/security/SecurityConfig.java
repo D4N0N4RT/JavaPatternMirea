@@ -1,6 +1,5 @@
 package com.security;
 
-
 import com.service.ApplicationUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

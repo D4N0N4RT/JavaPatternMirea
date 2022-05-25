@@ -44,4 +44,6 @@ public class ApplicationUserService implements UserDetailsService {
         userRepository.save(user);
         return "login";
     }
+
+
 }

@@ -14,7 +14,6 @@ public class StudentController {
         return student == null ? "nulli" : student.toString();
     }
 
-    //curl -i -X POST -H "Content-Type: application/json" -d "{\"firstName\":\"first\",\"middleName\":\"mid\",\"lastName\":\"last\"}" http://localhost:8080/student
     @PostMapping(
             path = "/student",
             consumes = {
